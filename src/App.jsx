@@ -11,12 +11,22 @@ const App = () => {
     <>
       <Navbar />
       <div className="max-w-7xl mx-auto pt-20 px-6">
-        <HeroSection />
-        <FeatureSection />
-        <Workflow />
-        <Pricing />
-        <Testimonials />
-        <Footer />
+        <main>
+          <section id="features" className="scroll-mt-[70px] ">
+            <HeroSection />
+            <FeatureSection />
+          </section>
+          <section id="workflow" className="scroll-mt-[70px] ">
+            <Workflow />
+          </section>
+          <section id="pricing" className="scroll-mt-[70px] ">
+            <Pricing />
+          </section>
+          <section id="testimonials" className="scroll-mt-[70px]">
+            <Testimonials />
+          </section>
+          <Footer />
+        </main>
       </div>
     </>
   );
